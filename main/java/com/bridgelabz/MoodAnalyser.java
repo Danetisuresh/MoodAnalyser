@@ -1,6 +1,6 @@
 package com.bridgelabz;
 /**
- * Purpose  - ability to analyse and respond happy or sad mood
+ * Purpose  - I am in Happy Mood” message in Constructor Should Return Happy
  */
 
 public class MoodAnalyser {
@@ -23,12 +23,10 @@ public class MoodAnalyser {
 	}
 
 	public String analyseMood() {
-
 		if (message.toLowerCase().contains("sad")) {
 			return "Sad";
 		} else if (message.toLowerCase().contains("happy")) {
 		}
 		return "Happy";
 	}
-
 }
