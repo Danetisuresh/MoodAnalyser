@@ -1,15 +1,23 @@
 package com.bridgelabz;
 /**
- * Purpose  - “I am in Sad Mood” message Should Return HAPPY
+ * Purpose  - ability to analyse and respond happy or sad mood
  */
 
 public class MoodAnalyser {
 	public static String analyseMood(String message) {
 		if (message.toLowerCase().contains("sad")) {
-		return "Sad";
+			return "Sad";
+		} else if (message.toLowerCase().contains("happy")) {
+			return "Happy";
+		}
+		return null;
 	}
-  else if (message.toLowerCase().contains("Happy")) {
-  }
-	return "Happy";
- }
+
+	public static void main(String[] args) {
+		String mood = MoodAnalyser.analyseMood("User is Happy");
+		System.out.println(mood);
+		mood = MoodAnalyser.analyseMood("User is Sad");
+		System.out.println(mood);
+	}
+
 }
