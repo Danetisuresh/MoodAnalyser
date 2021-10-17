@@ -1,6 +1,6 @@
 package com.bridgelabz;
 /**
- * Purpose  - ability to analyse and respond happy or sad mood
+ * Purpose  -  I am in Sad Mood” message in Constructor Should Return Sad
  */
 
 public class MoodAnalyser {
